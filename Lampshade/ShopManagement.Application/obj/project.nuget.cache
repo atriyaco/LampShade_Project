@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "x+CMHtvxvAaN1w/CDqFJrbClVicFuyUvpwgEs6HFCh16uYZ2khThS8n09eFtBY6FYkTJu4Z1+F80+Mwx83+76g==",
+  "success": true,
+  "projectFilePath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.5.0.0-preview.6.20312.4.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.abstractions.5.0.0-preview.6.20312.4.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.analyzers.5.0.0-preview.6.20312.4.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0-preview.3.20215.2\\microsoft.extensions.caching.abstractions.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0-preview.3.20215.2\\microsoft.extensions.caching.memory.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0-preview.3.20215.2\\microsoft.extensions.configuration.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0-preview.3.20215.2\\microsoft.extensions.configuration.abstractions.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0-preview.3.20215.2\\microsoft.extensions.configuration.binder.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0-preview.3.20215.2\\microsoft.extensions.dependencyinjection.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0-preview.3.20215.2\\microsoft.extensions.dependencyinjection.abstractions.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0-preview.3.20215.2\\microsoft.extensions.logging.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0-preview.3.20215.2\\microsoft.extensions.logging.abstractions.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.options\\5.0.0-preview.3.20215.2\\microsoft.extensions.options.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0-preview.3.20215.2\\microsoft.extensions.primitives.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\system.collections.immutable\\5.0.0-preview.3.20214.6\\system.collections.immutable.5.0.0-preview.3.20214.6.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0-preview.3.20214.6\\system.componentmodel.annotations.5.0.0-preview.3.20214.6.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0-preview.3.20214.6\\system.diagnostics.diagnosticsource.5.0.0-preview.3.20214.6.nupkg.sha512"
+  ],
+  "logs": []
+}

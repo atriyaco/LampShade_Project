@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="images/favicon_1.ico">
+
+    <title>@ViewData["Title"] | Lampshade Shop</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <!-- Base Css Files -->
+    <link href="~/AdminTheme/assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Icons -->
+    <link href="~/AdminTheme/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/AdminTheme/assets/ionicon/css/ionicons.min.css" rel="stylesheet" />
+    <link href="~/AdminTheme/assets/css/material-design-iconic-font.min.css" rel="stylesheet">
+
+    <!-- animate css -->
+    <link href="~/AdminTheme/assets/css/animate.css" rel="stylesheet" />
+
+    <!-- Waves-effect -->
+    <link href="~/AdminTheme/assets/css/waves-effect.css" rel="stylesheet">
+
+    <link href="~/AdminTheme/assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- sweet alerts -->
+    <link href="~/AdminTheme/assets/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+
+    <!-- Custom Files -->
+    <link href="~/AdminTheme/assets/css/helper.css" rel="stylesheet" type="text/css" />
+    <link href="~/AdminTheme/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="~/AdminTheme/assets/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="fixed-left">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <div class="topbar">
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="index.html" class="logo"><i class="md md-terrain"></i> <span>Moltran </span></a>
+                </div>
+            </div>
+            <!-- Button mobile view to collapse sidebar menu -->
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="">
+                        <div class="pull-left">
+                            <button class="button-menu-mobile open-left">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <span class="clearfix"></span>
+                        </div>
+                        <form class="navbar-form pull-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control search-bar" placeholder="Type here for search...">
+                            </div>
+                            <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+                        </form>
+
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="md md-notifications"></i> <span class="badge badge-xs badge-danger">3</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li class="text-center notifi-title">Notification</li>
+                                    <li class="list-group">
+                                        <!-- list item-->
+                                        <a href="javascript:void(0);" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <em class="fa fa-user-plus fa-2x text-info"></em>
+                                                </div>
+                                                <div class="media-body clearfix">
+                                                    <div class="media-heading">New user registered</div>
+                                                    <p class="m-0">
+                                                        <small>You have 10 unread messages</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- list item-->
+                                        <a href="javascript:void(0);" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <em class="fa fa-diamond fa-2x text-primary"></em>
+                                                </div>
+                                                <div class="media-body clearfix">
+                                                    <div class="media-heading">New settings</div>
+                                                    <p class="m-0">
+                                                        <small>There are new settings available</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- list item-->
+                                        <a href="javascript:void(0);" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <em class="fa fa-bell-o fa-2x text-danger"></em>
+                                                </div>
+                                                <div class="media-body clearfix">
+                                                    <div class="media-heading">Updates</div>
+                                                    <p class="m-0">
+                                                        <small>
+                                                            There are
+                                                            <span class="text-primary">2</span> new updates available
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- last list item -->
+                                        <a href="javascript:void(0);" class="list-group-item">
+                                            <small>See all notifications</small>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true"><img src="~/AdminTheme/assets/images/avatar-1.jpg" alt="user-img" class="img-circle"> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile</a></li>
+                                    <li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
+                                    <li><a href="javascript:void(0)"><i class="md md-lock"></i> Lock screen</a></li>
+                                    <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="left side-menu">
+            <div class="sidebar-inner slimscrollleft">
+                <div class="user-details">
+                    <div class="pull-right">
+                        <img src="~/AdminTheme/assets/images/users/avatar-1.jpg" alt="" class="thumb-md img-circle">
+                    </div>
+                    <div class="user-info">
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">جان دو <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile<div class="ripple-wrapper"></div></a></li>
+                                <li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
+                                <li><a href="javascript:void(0)"><i class="md md-lock"></i> Lock screen</a></li>
+                                <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
+                            </ul>
+                        </div>
+
+                        <p class="text-muted m-0">مدیر سیستم</p>
+                    </div>
+                </div>
+                <!--- Divider -->
+                <div id="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a asp-page="/Index" class="waves-effect active"><i class="md md-home"></i><span> داشبورد </span></a>
+                        </li>
+                        <li class="has_sub">
+                            <a class="waves-effect"><i class="md md-mail"></i><span> فروشگاه </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="email-read.html">اسلایدر</a></li>
+                                <li><a asp-page="/Shop/ProductCategories/Index">گروه محصولات</a></li>
+                                <li><a href="email-compose.html">محصولات</a></li>
+                                <li><a href="email-read.html">عکس محصولات</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container">
+
+                    @RenderBody()
+
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+
+            <footer class="footer text-right">
+                2015 © Moltran.
+            </footer>
+
+        </div>
+    </div>
+
+    <div id="MainModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content" id="ModalContent">
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/AdminTheme/assets/js/bootstrap.min.js"></script>
+    <script src="~/AdminTheme/assets/js/waves.js"></script>
+    <script src="~/AdminTheme/assets/js/wow.min.js"></script>
+    <script src="~/AdminTheme/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="~/AdminTheme/assets/js/jquery.scrollTo.min.js"></script>
+    <script src="~/AdminTheme/assets/chat/moment-2.2.1.js"></script>
+    <script src="~/AdminTheme/assets/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="~/AdminTheme/assets/jquery-detectmobile/detect.js"></script>
+    <script src="~/AdminTheme/assets/fastclick/fastclick.js"></script>
+    <script src="~/AdminTheme/assets/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="~/AdminTheme/assets/jquery-blockui/jquery.blockUI.js"></script>
+
+    <!-- sweet alerts -->
+    <script src="~/AdminTheme/assets/sweet-alert/sweet-alert.min.js"></script>
+    <script src="~/AdminTheme/assets/sweet-alert/sweet-alert.init.js"></script>
+
+    <!-- flot Chart -->
+    <script src="~/AdminTheme/assets/flot-chart/jquery.flot.js"></script>
+    <script src="~/AdminTheme/assets/flot-chart/jquery.flot.time.js"></script>
+    <script src="~/AdminTheme/assets/flot-chart/jquery.flot.tooltip.min.js"></script>
+    <script src="~/AdminTheme/assets/flot-chart/jquery.flot.resize.js"></script>
+    <script src="~/AdminTheme/assets/flot-chart/jquery.flot.pie.js"></script>
+    <script src="~/AdminTheme/assets/flot-chart/jquery.flot.selection.js"></script>
+    <script src="~/AdminTheme/assets/flot-chart/jquery.flot.stack.js"></script>
+    <script src="~/AdminTheme/assets/flot-chart/jquery.flot.crosshair.js"></script>
+
+    <!-- Counter-up -->
+    <script src="~/AdminTheme/assets/counterup/waypoints.min.js" type="text/javascript"></script>
+    <script src="~/AdminTheme/assets/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+
+
+    <!-- CUSTOM JS -->
+    <script src="~/AdminTheme/assets/js/jquery.app.js"></script>
+
+    <!-- Dashboard -->
+    <script src="~/AdminTheme/assets/js/jquery.dashboard.js"></script>
+
+    <!-- Chat -->
+    <script src="~/AdminTheme/assets/js/jquery.chat.js"></script>
+
+    <!-- Todo -->
+    <script src="~/AdminTheme/assets/js/jquery.todo.js"></script>
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+    <script src="~/AdminTheme/assets/js/site.js"></script>
+
+    @RenderSection("Scripts", false)
+
+    <!-- <script type="text/javascript"> -->
+    <!-- /* ============================================== -->
+    <!-- Counter Up -->
+    <!-- =============================================== */ -->
+    <!-- jQuery(document).ready(function($) { -->
+    <!-- $('.counter').counterUp({ -->
+    <!-- delay: 100, -->
+    <!-- time: 1200 -->
+    <!-- }); -->
+    <!-- }); -->
+    <!-- </script> -->
+
+</body>
+</html>
