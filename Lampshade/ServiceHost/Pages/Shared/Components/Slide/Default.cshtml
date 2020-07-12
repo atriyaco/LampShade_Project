@@ -1,0 +1,59 @@
+﻿@model List<_01_LampshadeQuery.Contracts.Slide.SlideQueryModel>
+
+<div class="hero-slider-area section-space">
+    <div class="container wide">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hero-slider-wrapper">
+                    <div class="ht-slick-slider" data-slick-setting='{
+                        "slidesToShow": 1,
+                        "slidesToScroll": 1,
+                        "arrows": true,
+                        "dots": true,
+                        "autoplay": true,
+                        "autoplaySpeed": 5000,
+                        "speed": 1000,
+                        "fade": true,
+                        "infinite": true,
+                        "prevArrow": {"buttonClass": "slick-prev", "iconClass": "ion-chevron-left" },
+                        "nextArrow": {"buttonClass": "slick-next", "iconClass": "ion-chevron-right" }
+                    }' data-slick-responsive='[
+                        {"breakpoint":1501, "settings": {"slidesToShow": 1} },
+                        {"breakpoint":1199, "settings": {"slidesToShow": 1, "arrows": false} },
+                        {"breakpoint":991, "settings": {"slidesToShow": 1, "arrows": false} },
+                        {"breakpoint":767, "settings": {"slidesToShow": 1, "arrows": false} },
+                        {"breakpoint":575, "settings": {"slidesToShow": 1, "arrows": false} },
+                        {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false} }
+                    ]'>
+
+                        @foreach (var slide in Model)
+                        {
+                            <div class="single-slider-item">
+                                <div class="hero-slider-item-wrapper">
+                                    <div class="container">
+                                        <img src="@slide.Picture" alt="@slide.PictureAlt" title="@slide.PictureTitle" />
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="hero-slider-content hero-slider-content--left-space">
+                                                    <p class="slider-title slider-title--big-light">@slide.Heading</p>
+                                                    <p class="slider-title slider-title--big-bold">@slide.Title</p>
+                                                    <p class="slider-title slider-title--small">
+                                                        @slide.Text
+                                                    </p>
+                                                    <a class="hero-slider-button" href="@slide.Link">
+                                                        @slide.BtnText <i class="ion-ios-plus-empty"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
