@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K/sSGm49FCpJBMjzNJQDTJ953tlxDrRxU5p7maSqkcV5l22bp2bzujODqfpb2GQWpIrIKe7VBu+9MslcUATv3w==",
+  "dgSpecHash": "1WswDnTiTXjfVegpjLDXHowTbnyY4OngoouQMZCj6OqOMsoJiOXSmCp549zyvvGMpc+qqfuueP5Z989ndmD32g==",
   "success": true,
   "projectFilePath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [

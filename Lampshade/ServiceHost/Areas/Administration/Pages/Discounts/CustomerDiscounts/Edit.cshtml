@@ -1,0 +1,67 @@
+﻿@model DiscountManagement.Application.Contract.CustomerDiscount.EditCustoemrDiscount
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">ویرایش تخفیف مشتری</h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Edit"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ProductId" class="control-label">انتخاب محصول</label>
+                    <select class="form-control" asp-for="ProductId"
+                            asp-items='new SelectList(Model.Products, "Id", "Name")'>
+                        <option value="0">انتخاب محصول</option>
+                    </select>
+                    <span asp-validation-for="ProductId" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="DiscountRate" class="control-label">درصد تخفیف</label>
+                    <input type="text" class="form-control" asp-for="DiscountRate">
+                    <span asp-validation-for="DiscountRate" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="StartDate" class="control-label">تاریخ شروع</label>
+                    <input class="form-control persianDateInput" asp-for="StartDate">
+                    <span asp-validation-for="StartDate" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="EndDate" class="control-label">تاریخ پایان</label>
+                    <input class="form-control persianDateInput" asp-for="EndDate">
+                    <span asp-validation-for="EndDate" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group no-margin">
+                    <label asp-for="Reason" class="control-label">علت تخفیف</label>
+                    <textarea class="form-control autogrow" asp-for="Reason"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <span asp-validation-for="Reason" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" asp-for="Id" value="@Model.Id" />
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">ویرایش</button>
+    </div>
+</form>

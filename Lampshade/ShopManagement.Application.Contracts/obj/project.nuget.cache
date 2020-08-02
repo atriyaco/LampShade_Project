@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fnG0AUe5GVfbTvp0JvVyTsQM9PzSE8KoSTbvDgsVLxIoJGhFApH4CVeLXgvw1/1nnVFBun9+DwQ/SoCVwzT5jA==",
+  "dgSpecHash": "gnfZtIcVGCvcr3US47wuXeWgWQ6VfFZNwDFuWQT8khGZticO/41R5J/mAEDJKFyv+IvIlAgcLsoMkl9bOT5RAw==",
   "success": true,
   "projectFilePath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
   "expectedPackageFiles": [
