@@ -1,0 +1,41 @@
+﻿@model InventoryManagement.Application.Contract.Inventory.IncreaseInventory
+@{
+
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">افزایش موجودی انبار</h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Increase"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Count" class="control-label">انتخاب محصول</label>
+                    <input class="form-control" asp-for="Count" />
+                    <span asp-validation-for="Count" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">توضیحات</label>
+                    <textarea rows="3" class="form-control" asp-for="Description"></textarea>
+                    <span asp-validation-for="Description" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" asp-for="InventoryId" value="@Model.InventoryId" />
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">افزایش</button>
+    </div>
+</form>

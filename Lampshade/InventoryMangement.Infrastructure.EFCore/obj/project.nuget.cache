@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eK38qTB2oB4741hIpOK6AZfzfRvkHWdg41ptCoQ3zQWUOhbxxsFRGop5R/0nEgMnypz8Mc6ncpa8IAdUoLwabA==",
+  "dgSpecHash": "Y5TIpMuPAPrnh3mBYPx5f1TGA3kRw8zYhl2LLU4EIh4toAxs5Ry/J9/v0jjiI8yAXK00qT87VkLWiux2RF5NfQ==",
   "success": true,
   "projectFilePath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [
