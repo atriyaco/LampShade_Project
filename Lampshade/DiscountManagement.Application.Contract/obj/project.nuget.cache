@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SB8trrUtyrh6lzxCKcpKdLp7YzwaPJWhM/oi3oe2aABOt0IZbbazsS7ZCfajJXghMmEIzyS/wHIglaJk5dPHIA==",
+  "dgSpecHash": "0UMBhj6hfmm0S5uC2Z6ungEVcmR51CG0IpksJDqTzgMAov0zhUOqwiVSE3wcDD1RaC1pBTT+A6nuDdOBzwYhLg==",
   "success": true,
   "projectFilePath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
   "expectedPackageFiles": [

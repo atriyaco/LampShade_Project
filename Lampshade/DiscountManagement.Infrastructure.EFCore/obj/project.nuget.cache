@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CERrIzYCynU0sFSmuu2qmJf4SPillIqvjz0EXlTZCBKRQxNClk7jhlJTvXpwACgqcHAv2EIRlxyjoCNOPjcLQA==",
+  "dgSpecHash": "4952QqIrLrrg4pqMbEIrewVLPfcQNa61FpkGJbpfn8KLUsodY5jqa3rP98Nq5xz6ijbUBhekiYo9XRfwauRAHg==",
   "success": true,
   "projectFilePath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [

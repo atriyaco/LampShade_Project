@@ -1,0 +1,40 @@
+﻿@model DiscountManagement.Application.Contract.ColleagueDiscount.DefineColleagueDiscount
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">تعریف تخفیف همکاری جدید</h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Create"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ProductId" class="control-label">انتخاب محصول</label>
+                    <select class="form-control" asp-for="ProductId"
+                            asp-items='new SelectList(Model.Products, "Id", "Name")'>
+                        <option value="0">انتخاب محصول</option>
+                    </select>
+                    <span asp-validation-for="ProductId" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="DiscountRate" class="control-label">درصد تخفیف</label>
+                    <input type="text" class="form-control" asp-for="DiscountRate">
+                    <span asp-validation-for="DiscountRate" class="error"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">تعریف</button>
+    </div>
+</form>
