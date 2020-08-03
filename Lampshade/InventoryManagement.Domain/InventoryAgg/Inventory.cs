@@ -1,5 +1,4 @@
 ﻿using _0_Framework.Domain;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -19,7 +18,13 @@ namespace InventoryManagement.Domain.InventoryAgg
             InStock = false;
         }
 
-        private long CalculateCurrentCount()
+        public void Edit(long productId, double unitPrice)
+        {
+            ProductId = productId;
+            UnitPrice = unitPrice;
+        }
+
+        public long CalculateCurrentCount()
         {
             var plus = Operations.Where(x => x.Operation).Sum(x => x.Count);
             var minus = Operations.Where(x => !x.Operation).Sum(x => x.Count);
@@ -46,32 +51,6 @@ namespace InventoryManagement.Domain.InventoryAgg
             var operation = new InventoryOperation(false, count, operatorId, currentCount, description, orderId, Id);
             Operations.Add(operation);
             InStock = currentCount > 0;
-        }
-    }
-
-    public class InventoryOperation
-    {
-        public long Id { get; private set; }
-        public bool Operation { get; private set; }
-        public long Count { get; private set; }
-        public long OperatorId { get; private set; }
-        public DateTime OperationDate { get; private set; }
-        public long CurrentCount { get; private set; }
-        public string Description { get; private set; }
-        public long OrderId { get; private set; }
-        public long InvetoryId { get; private set; }
-        public Inventory Inventory { get; private set; }
-
-        public InventoryOperation(bool operation, long count, long operatorId, long currentCount,
-            string description, long orderId, long invetoryId)
-        {
-            Operation = operation;
-            Count = count;
-            OperatorId = operatorId;
-            CurrentCount = currentCount;
-            Description = description;
-            OrderId = orderId;
-            InvetoryId = invetoryId;
         }
     }
 }
