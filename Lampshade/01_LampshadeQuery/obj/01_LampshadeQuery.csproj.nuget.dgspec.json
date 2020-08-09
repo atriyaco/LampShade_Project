@@ -30,6 +30,12 @@
         "frameworks": {
           "net5.0": {
             "projectReferences": {
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              },
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj"
+              },
               "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
@@ -101,6 +107,410 @@
         "net5.0": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "projectName": "DiscountManagement.Application.Contract",
+        "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "packagesPath": "C:\\Users\\Atria\\.nuget\\packages\\",
+        "outputPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Atria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              },
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
+        "projectName": "DiscountManagement.Domain",
+        "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\Atria\\.nuget\\packages\\",
+        "outputPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Atria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              },
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "projectName": "DiscountManagement.Infrastructure.EFCore",
+        "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\Atria\\.nuget\\packages\\",
+        "outputPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Atria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              },
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "projectName": "InventoryManagement.Application.Contract",
+        "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "packagesPath": "C:\\Users\\Atria\\.nuget\\packages\\",
+        "outputPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Atria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              },
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "projectName": "InventoryManagement.Domain",
+        "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\Atria\\.nuget\\packages\\",
+        "outputPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Atria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              },
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj",
+        "projectName": "InventoryMangement.Infrastructure.EFCore",
+        "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\Atria\\.nuget\\packages\\",
+        "outputPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Atria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              },
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0-preview.6.20312.4, )"
             }

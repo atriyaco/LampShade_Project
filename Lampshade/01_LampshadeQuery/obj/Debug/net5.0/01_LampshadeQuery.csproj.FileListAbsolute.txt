@@ -16,3 +16,15 @@ C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\obj\Debug\net5.0\01_LampshadeQuery.csproj.CopyComplete
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\obj\Debug\net5.0\01_LampshadeQuery.dll
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\obj\Debug\net5.0\01_LampshadeQuery.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Domain.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Domain.pdb

@@ -23,3 +23,15 @@ C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\Sho
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.dll
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.genruntimeconfig.cache
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb

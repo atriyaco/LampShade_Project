@@ -2350,10 +2350,6 @@ select {
 	color: #e33;
 }
 
-.single-grid-product__price {
-	font-family: 'Karla', sans-serif;
-}
-
 .single-grid-product__price .main-price {
 	font-size: 16px;
 	font-weight: 400;

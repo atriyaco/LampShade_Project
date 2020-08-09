@@ -1,0 +1,111 @@
+﻿@model List<_01_LampshadeQuery.Contracts.ProductCategory.ProductCategoryQueryModel>
+
+<div class="single-row-slider-tab-area section-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title-wrapper text-center section-space--half">
+                    <h2 class="section-title">محصولات ما</h2>
+                    <p class="section-subtitle">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="tab-slider-wrapper">
+                    <div class="tab-product-navigation">
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab2" role="tablist">
+                            @foreach (var category in Model)
+                            {
+                                <a class="nav-item nav-link @(Model.First() == category ? "active" : "")" id="product-tab-@category.Id" data-toggle="tab"
+                                   href="#product-series-@category.Id" role="tab" aria-selected="true">@category.Name</a>
+                            }
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        @foreach (var category in Model)
+                        {
+                            <div class="tab-pane fade show @(Model.First() == category ? "active" : "")" id="product-series-@category.Id" role="tabpanel"
+                                 aria-labelledby="product-tab-1">
+                                <div class="single-row-slider-wrapper">
+                                    <div class="ht-slick-slider" data-slick-setting='{
+                                "slidesToShow": 4,
+                                "slidesToScroll": 1,
+                                "arrows": true,
+                                "autoplay": false,
+                                "autoplaySpeed": 5000,
+                                "speed": 1000,
+                                "infinite": true,
+                                "rtl": true,
+                                "prevArrow": {"buttonClass": "slick-prev", "iconClass": "ion-chevron-left" },
+                                "nextArrow": {"buttonClass": "slick-next", "iconClass": "ion-chevron-right" }
+                            }' data-slick-responsive='[
+                                {"breakpoint":1501, "settings": {"slidesToShow": 4} },
+                                {"breakpoint":1199, "settings": {"slidesToShow": 4, "arrows": false} },
+                                {"breakpoint":991, "settings": {"slidesToShow": 3, "arrows": false} },
+                                {"breakpoint":767, "settings": {"slidesToShow": 2, "arrows": false} },
+                                {"breakpoint":575, "settings": {"slidesToShow": 2, "arrows": false} },
+                                {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false} }
+                            ]'>
+                                        @foreach (var product in category.Products)
+                                        {
+                                            <div class="col">
+                                                <div class="single-grid-product">
+                                                    <div class="single-grid-product__image">
+                                                        @if (product.HasDiscount)
+                                                        {
+                                                            <div class="single-grid-product__label">
+                                                                <span class="sale">-@product.DiscountRate%</span>
+                                                            </div>
+                                                        }
+                                                        <a href="single-product.html">
+                                                            <img src="~/ProductPictures/@product.Picture" title="@product.PictureTitle" class="img-fluid"
+                                                                 alt="@product.PictureAlt">
+                                                        </a>
+                                                    </div>
+                                                    <div class="single-grid-product__content">
+                                                        <div class="single-grid-product__category-rating">
+                                                            <span class="category">
+                                                                <a href="shop-left-sidebar.html">@product.Category</a>
+                                                            </span>
+                                                            <span class="rating">
+                                                                <i class="ion-android-star active"></i>
+                                                                <i class="ion-android-star active"></i>
+                                                                <i class="ion-android-star active"></i>
+                                                                <i class="ion-android-star active"></i>
+                                                                <i class="ion-android-star-outline"></i>
+                                                            </span>
+                                                        </div>
+
+                                                        <h3 class="single-grid-product__title">
+                                                            <a href="single-product.html">
+                                                                @product.Name
+                                                            </a>
+                                                        </h3>
+                                                        <p class="single-grid-product__price">
+                                                            @if (product.HasDiscount)
+                                                            {
+                                                                <span class="discounted-price">@product.PriceWithDiscount تومان</span>
+                                                                <span class="main-price discounted">@product.Price تومان</span>
+                                                            }
+                                                            else
+                                                            {
+                                                                <span class="main-price">@product.Price تومان</span>
+                                                            }
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

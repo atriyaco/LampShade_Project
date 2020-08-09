@@ -74,14 +74,14 @@
                                     <tr>
                                         <td>@item.Id</td>
                                         <td>
-                                            <img src="@item.Picture" style="width: 70px; height: 70px" />
+                                            <img src="~/ProductPictures/@item.Picture" style="width: 70px; height: 70px" />
                                         </td>
                                         <td>@item.Name</td>
                                         <td>@item.Code</td>
                                         <td>@item.Category</td>
                                         <td>@item.CreationDate</td>
                                         <td>
-                                            <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5"
+                                            <a class="btn btn-warning waves-effect waves-light m-b-5"
                                                href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
                                                 <i class="fa fa-edit"></i> ویرایش
                                             </a>

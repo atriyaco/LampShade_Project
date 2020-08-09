@@ -30,6 +30,12 @@
         "frameworks": {
           "net5.0": {
             "projectReferences": {
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              },
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj"
+              },
               "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
