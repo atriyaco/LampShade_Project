@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "XNsBp7q83Hcgx0eUezFZWsZMORNG19jrTwUFcOZ7qkiDDLxGCnmE7r2vkwJk3XwyVfcq2GwK1ktGqHBJp3E+CQ==",
+  "dgSpecHash": "YJWdpeJAypRB1yv9JStfgGL8jhdMFo5eSHDPVopo/tU6MYc9G+LTCtjDLBzGypFdX9flt+slwpzKPXNGwUQh5Q==",
   "success": true,
   "projectFilePath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.6\\microsoft.aspnetcore.http.features.3.1.6.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.5.0.0-preview.6.20312.4.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.abstractions.5.0.0-preview.6.20312.4.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.analyzers.5.0.0-preview.6.20312.4.nupkg.sha512",
@@ -18,9 +22,13 @@
     "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0-preview.3.20215.2\\microsoft.extensions.logging.abstractions.5.0.0-preview.3.20215.2.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.options\\5.0.0-preview.3.20215.2\\microsoft.extensions.options.5.0.0-preview.3.20215.2.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0-preview.3.20215.2\\microsoft.extensions.primitives.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\system.collections.immutable\\5.0.0-preview.3.20214.6\\system.collections.immutable.5.0.0-preview.3.20214.6.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0-preview.3.20214.6\\system.componentmodel.annotations.5.0.0-preview.3.20214.6.nupkg.sha512",
-    "C:\\Users\\Atria\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0-preview.3.20214.6\\system.diagnostics.diagnosticsource.5.0.0-preview.3.20214.6.nupkg.sha512"
+    "C:\\Users\\Atria\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0-preview.3.20214.6\\system.diagnostics.diagnosticsource.5.0.0-preview.3.20214.6.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\system.io.pipelines\\4.7.1\\system.io.pipelines.4.7.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
