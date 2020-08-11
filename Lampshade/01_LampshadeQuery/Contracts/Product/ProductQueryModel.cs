@@ -23,6 +23,7 @@ namespace _01_LampshadeQuery.Contracts.Product
         public string Keywords { get; set; }
         public string MetaDescription { get; set; }
         public bool IsInStock { get; set; }
+        public List<CommentQueryModel> Comments { get; set; }
         public List<ProductPictureQueryModel> Pictures { get; set; }
     }
 
@@ -33,6 +34,13 @@ namespace _01_LampshadeQuery.Contracts.Product
         public string PictureAlt { get; set; }
         public string PictureTitle { get; set; }
         public bool IsRemoved { get; set; }
+    }
+
+    public class CommentQueryModel
+    {
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public string Message { get; set; }
     }
 
 }
