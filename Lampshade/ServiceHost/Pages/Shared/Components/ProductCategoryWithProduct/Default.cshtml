@@ -60,7 +60,7 @@
                                                                 <span class="sale">-@product.DiscountRate%</span>
                                                             </div>
                                                         }
-                                                        <a href="single-product.html">
+                                                        <a asp-page="/Product" asp-route-id="@product.Slug">
                                                             <img src="~/ProductPictures/@product.Picture" title="@product.PictureTitle" class="img-fluid"
                                                                  alt="@product.PictureAlt">
                                                         </a>
@@ -68,7 +68,7 @@
                                                     <div class="single-grid-product__content">
                                                         <div class="single-grid-product__category-rating">
                                                             <span class="category">
-                                                                <a href="shop-left-sidebar.html">@product.Category</a>
+                                                                <a asp-page="/ProductCategory" asp-route-id="@category.Slug">@product.Category</a>
                                                             </span>
                                                             <span class="rating">
                                                                 <i class="ion-android-star active"></i>
@@ -80,7 +80,7 @@
                                                         </div>
 
                                                         <h3 class="single-grid-product__title">
-                                                            <a href="single-product.html">
+                                                            <a asp-page="/Product" asp-route-id="@product.Slug">
                                                                 @product.Name
                                                             </a>
                                                         </h3>

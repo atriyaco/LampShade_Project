@@ -4115,6 +4115,7 @@ select {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	justify-content:flex-end;
 }
 
 .product-actions--slider-box {
