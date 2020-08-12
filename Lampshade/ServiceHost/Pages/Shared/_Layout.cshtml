@@ -26,8 +26,8 @@
             <i class="ion-ios-close-empty"></i>
         </a>
         <div class="search-form">
-            <form action="#">
-                <input type="search" placeholder="هرچه می خواهید در فروشگاه جستجو کنید ...">
+            <form method="get" asp-page="/Search">
+                <input type="search" name="value" id="value" placeholder="هرچه می خواهید در فروشگاه جستجو کنید ...">
                 <button type="submit">
                     <i class="ion-android-search"></i>
                 </button>
@@ -39,7 +39,7 @@
     <div id="scroll-top">
         <span>برو بالا</span><i class="ion-chevron-right"></i><i class="ion-chevron-right"></i>
     </div>
-    
+
     <script src="~/Theme/assets/js/vendors.js"></script>
     <script src="~/Theme/assets/js/active.js"></script>
 
