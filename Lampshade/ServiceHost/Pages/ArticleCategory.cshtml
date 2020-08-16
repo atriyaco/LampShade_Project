@@ -1,0 +1,155 @@
+﻿@page "{id}"
+@model ServiceHost.Pages.ArticleCategoryModel
+@{
+    ViewData["Title"] = "مقالات";
+}
+
+
+<div class="breadcrumb-area section-space--half">
+    <div class="container wide">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-wrapper breadcrumb-bg">
+                    <div class="breadcrumb-content">
+                        <h1 class="breadcrumb-content__title">@Model.ArticleCategory.Name</h1>
+                        <ul class="breadcrumb-content__page-map">
+                            <li>
+                                <a asp-page="./Index">صفحه اصلی</a>
+                            </li>
+                            <li class="active">@Model.ArticleCategory.Name</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-wrapper">
+                    <div class="page-content-wrapper">
+                        <div class="row">
+                            <div class="col-lg-9 order-1 order-lg-1">
+                                <div class="blog-page-content">
+                                    <div class="row">
+                                        @foreach (var article in Model.ArticleCategory.Articles)
+                                        {
+                                            <div class="col-md-6">
+                                                <div class="single-blog-post">
+                                                    <div class="single-blog-post__image">
+                                                        <a asp-page="./Article" asp-route-id="@article.Slug">
+                                                            <img src="~/ProductPictures/@article.Picture"
+                                                                 class="img-fluid" alt="@article.PictureAlt"
+                                                                 title="@article.Title">
+                                                        </a>
+                                                    </div>
+                                                    <div class="single-blog-post__content">
+                                                        <h3 class="title">
+                                                            <a asp-page="./Article" asp-route-id="@article.Slug">
+                                                                @article.Title
+                                                            </a>
+                                                        </h3>
+                                                        <p class="post-meta">
+                                                            <span class="date">@article.PublishDate</span>
+                                                        </p>
+                                                        <p class="short-desc">
+                                                            @article.ShortDescription
+                                                        </p>
+                                                        <a asp-page="./Article" asp-route-id="@article.Slug"
+                                                           class="blog-post-link">ادامه مطلب</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+
+                                <div class="pagination-area">
+                                    <div class="pagination-area__left">
+                                        Showing 1 to 9 of 11 (2 Pages)
+                                    </div>
+                                    <div class="pagination-area__right">
+                                        <ul class="pagination-section">
+                                            <li>
+                                                <a class="active" href="#">1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">></a>
+                                            </li>
+                                            <li>
+                                                <a href="#">>|</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 order-2 order-lg-2">
+                                <div class="page-sidebar-wrapper">
+                                    <div class="single-sidebar-widget">
+
+                                        <h4 class="single-sidebar-widget__title">گروه مقالات</h4>
+                                        <ul class="single-sidebar-widget__category-list">
+                                            @foreach (var category in Model.ArticleCategories)
+                                            {
+                                                <li>
+                                                    <a asp-page="./ArticleCategory" asp-route-id="@category.Slug" class="active">
+                                                        @category.Name <span class="counter">@category.ArticlesCount</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <div class="single-sidebar-widget">
+
+                                        <h4 class="single-sidebar-widget__title">آخرین مقالات</h4>
+                                        <div class="block-container">
+                                            @foreach (var article in Model.LatestArticles)
+                                            {
+                                                <div class="single-block d-flex">
+                                                    <div class="image">
+                                                        <a asp-page="./Article" asp-route-id="@article.Slug">
+                                                            <img src="~/ProductPictures/@article.Picture"
+                                                                 class="img-fluid" alt="@article.PictureAlt"
+                                                                 title="@article.PictureTitle">
+                                                        </a>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            <a asp-page="./Article" asp-route-id="@article.Slug">
+                                                                @article.Title
+                                                            </a> <span>@article.PublishDate</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="single-sidebar-widget">
+                                        <h4 class="single-sidebar-widget__title">تگ ها</h4>
+                                        <ul class="single-sidebar-widget__tag-list">
+                                            @foreach (var tag in Model.ArticleCategory.KeywordList)
+                                            {
+                                                <li>
+                                                    <a asp-page="./Search" asp-route-value="@tag">@tag</a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <!--=======  End of single sidebar widget  =======-->
+                                </div>
+                                <!--=======  End of page sidebar wrapper  =======-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

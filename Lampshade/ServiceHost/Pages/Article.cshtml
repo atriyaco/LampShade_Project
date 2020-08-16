@@ -1,0 +1,312 @@
+﻿@page "{id}"
+@model ServiceHost.Pages.ArticleModel
+@{
+    ViewData["Title"] = "صفحه مقاله";
+}
+
+
+<div class="breadcrumb-area section-space--half">
+    <div class="container wide">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-wrapper breadcrumb-bg">
+                    <div class="breadcrumb-content">
+                        <h1 class="breadcrumb-content__title">@Model.Article.Title</h1>
+                        <ul class="breadcrumb-content__page-map">
+                            <li>
+                                <a asp-page="/Index">صفحه اصلی</a>
+                            </li>
+                            <li>
+                                <a asp-page="/ArticleCategory" asp-route-id="@Model.Article.CategorySlug">@Model.Article.CategoryName</a>
+                            </li>
+                            <li>@Model.Article.Title</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-wrapper">
+                    <div class="page-content-wrapper">
+                        <div class="row">
+                            <div class="col-lg-9 order-1 order-lg-1">
+                                <div class="blog-page-content">
+                                    <div class="blog-single-post-container">
+                                        <h3 class="post-title">@Model.Article.Title</h3>
+                                        <div class="post-meta">
+                                            <p>
+                                                <span>
+                                                    <i class="fa fa-calendar"></i> نوشته شده در:
+                                                    @Model.Article.PublishDate
+                                                </span>
+                                            </p>
+                                        </div>
+
+                                        <div class="single-blog-post-media">
+                                            <div class="image">
+                                                <img src="~/ProductPictures/@Model.Article.Picture" class="img-fluid" alt="@Model.Article.PictureAlt" title="@Model.Article.Title">
+                                            </div>
+                                        </div>
+
+                                        <div class="post-content">
+                                            @Html.Raw(Model.Article.Description)
+                                        </div>
+
+                                        <div class="tag-area">
+                                            <span>تگ ها: </span>
+                                            <ul>
+                                                @foreach (var tag in Model.Article.KeywordList)
+                                                {
+                                                    <li>
+                                                        <a asp-page="/Search" asp-route-value="@tag">@tag</a>,
+                                                    </li>
+                                                }
+                                            </ul>
+                                        </div>
+
+                                        <div class="social-share-buttons">
+                                            <h3>share this post</h3>
+                                            <ul>
+                                                <li>
+                                                    <a class="twitter" href="#">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="facebook" href="#">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="google-plus" href="#">
+                                                        <i class="fa fa-google-plus"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="pinterest" href="#">
+                                                        <i class="fa fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="comment-section">
+                                        <h3 class="comment-counter">4 COMMENTS</h3>
+
+                                        <!--=======  comment container  =======-->
+
+                                        <div class="comment-container">
+                                            <!--=======  single comment  =======-->
+
+                                            <div class="single-comment">
+                                                <span class="reply-btn">
+                                                    <a href="#">Reply</a>
+                                                </span>
+
+                                                <div class="image">
+                                                    <img src="assets/img/blog/comment-icon.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="user">
+                                                        admin <span class="comment-time">
+                                                            April 28, 2019
+                                                            at 3:09 am
+                                                        </span>
+                                                    </h3>
+                                                    <p class="comment-text">
+                                                        Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Sint quia rem dolorem et rerum est
+                                                        laudantium eum dolores omnis perspiciatis.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <!--=======  End of single comment  =======-->
+                                            <!--=======  single reply comment  =======-->
+
+                                            <div class="single-comment reply-comment">
+                                                <span class="reply-btn">
+                                                    <a href="#">Reply</a>
+                                                </span>
+
+                                                <div class="image">
+                                                    <img src="assets/img/blog/comment-icon.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="user">
+                                                        admin <span class="comment-time">
+                                                            April 28, 2019
+                                                            at 3:09 am
+                                                        </span>
+                                                    </h3>
+                                                    <p class="comment-text">
+                                                        Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Sint quia rem dolorem et rerum est
+                                                        laudantium eum dolores omnis perspiciatis.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <!--=======  End of single reply comment  =======-->
+                                            <!--=======  single comment  =======-->
+
+                                            <div class="single-comment">
+                                                <span class="reply-btn">
+                                                    <a href="#">Reply</a>
+                                                </span>
+
+                                                <div class="image">
+                                                    <img src="assets/img/blog/comment-icon.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="user">
+                                                        admin <span class="comment-time">
+                                                            April 28, 2019
+                                                            at 3:09 am
+                                                        </span>
+                                                    </h3>
+                                                    <p class="comment-text">
+                                                        Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Sint quia rem dolorem et rerum est
+                                                        laudantium eum dolores omnis perspiciatis.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <!--=======  End of single comment  =======-->
+
+
+                                        </div>
+
+                                        <!--=======  End of comment container  =======-->
+                                        <!--=======  comment form container  =======-->
+
+                                        <div class="comment-form-container">
+                                            <h3 class="comment-form-title">LEAVE A REPLY</h3>
+                                            <p>
+                                                Your email address will not be published. Required fields are marked
+                                                *
+                                            </p>
+
+                                            <!--=======  comment form  =======-->
+
+                                            <div class="comment-form">
+                                                <form action="#">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="form-group">
+                                                                <label>Comment</label>
+                                                                <textarea name="commentMessage"
+                                                                          id="commentMessage"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="form-group">
+                                                                <label>Name <span class="required">*</span></label>
+                                                                <input type="text" name="commenterName">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="form-group">
+                                                                <label>Email <span class="required">*</span></label>
+                                                                <input type="text" name="commenterEmail">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="form-group">
+                                                                <label>Website</label>
+                                                                <input type="text" name="commenterWebsite">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <button type="submit" class="comment-btn"
+                                                                    name="submit">
+                                                                post comment
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 order-2 order-lg-2">
+                                <div class="page-sidebar-wrapper">
+                                    <div class="single-sidebar-widget">
+
+                                        <h4 class="single-sidebar-widget__title">گروه مقالات</h4>
+                                        <ul class="single-sidebar-widget__category-list">
+                                            @foreach (var category in Model.ArticleCategories)
+                                            {
+                                                <li>
+                                                    <a asp-page="./ArticleCategory" asp-route-id="@category.Slug" class="active">
+                                                        @category.Name <span class="counter">@category.ArticlesCount</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+
+                                    <div class="single-sidebar-widget">
+
+                                        <h4 class="single-sidebar-widget__title">آخرین مقالات</h4>
+                                        <div class="block-container">
+                                            @foreach (var article in Model.LatestArticles)
+                                            {
+                                                <div class="single-block d-flex">
+                                                    <div class="image">
+                                                        <a asp-page="./Article" asp-route-id="@article.Slug">
+                                                            <img src="~/ProductPictures/@article.Picture"
+                                                                 class="img-fluid" alt="@article.PictureAlt"
+                                                                 title="@article.PictureTitle">
+                                                        </a>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            <a asp-page="./Article" asp-route-id="@article.Slug">
+                                                                @article.Title
+                                                            </a> <span>@article.PublishDate</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+
+                                    <!--=======  single sidebar widget  =======-->
+                                    <div class="single-sidebar-widget">
+                                        <h4 class="single-sidebar-widget__title">تگ ها</h4>
+                                        <ul class="single-sidebar-widget__tag-list">
+
+                                            @foreach (var tag in Model.Article.KeywordList)
+                                            {
+                                                <li>
+                                                    <a asp-page="/Search" asp-route-value="@tag">@tag</a>
+                                                </li>
+                                            }
+
+                                        </ul>
+                                    </div>
+                                    <!--=======  End of single sidebar widget  =======-->
+                                </div>
+                                <!--=======  End of page sidebar wrapper  =======-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--=======  End of page wrapper  =======-->
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,6 +3,7 @@ using _0_Framework.Infrastructure;
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Domain.ArticleAgg;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -46,10 +47,11 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
             var query = _context.Articles.Select(x => new ArticleViewModel
             {
                 Id = x.Id,
+                CategoryId = x.CategoryId,
                 Category = x.Category.Name,
                 Picture = x.Picture,
                 PublishDate = x.PublishDate.ToFarsi(),
-                ShortDescription = x.ShortDescription,
+                ShortDescription = x.ShortDescription.Substring(0, Math.Min(x.ShortDescription.Length, 50)) + " ...",
                 Title = x.Title
             });
 
