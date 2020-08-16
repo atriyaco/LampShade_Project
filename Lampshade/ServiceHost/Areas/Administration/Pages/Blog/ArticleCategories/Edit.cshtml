@@ -90,6 +90,15 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="CanonicalAddress" class="control-label">CanonicalAddress</label>
+                    <input type="text" class="form-control" asp-for="CanonicalAddress">
+                    <span asp-validation-for="CanonicalAddress" class="error"></span>
+                </div>
+            </div>
+        </div>
         <input type="hidden" asp-for="Id" value="@Model.Id" />
     </div>
     <div class="modal-footer">
