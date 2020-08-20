@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v5.0": {
+    "net5.0": {
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2096,9 +2096,10 @@
       },
       "01_LampshadeQuery/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
+          "CommnetManagement.Infrastructure.EFCore": "1.0.0",
           "DiscountManagement.Infrastructure.EFCore": "1.0.0",
           "InventoryMangement.Infrastructure.EFCore": "1.0.0",
           "ShopManagement.Infrastructure.EFCore": "1.0.0"
@@ -2112,7 +2113,7 @@
       },
       "0_Framework/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "3.1.6",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
@@ -2127,7 +2128,7 @@
       },
       "BlogManagement.Application/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "BlogManagement.Application.Contracts": "1.0.0",
           "BlogManagement.Domain": "1.0.0"
@@ -2141,7 +2142,7 @@
       },
       "BlogManagement.Application.Contracts/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "3.1.6"
@@ -2155,7 +2156,7 @@
       },
       "BlogManagement.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
           "BlogManagement.Application.Contracts": "1.0.0"
@@ -2169,7 +2170,7 @@
       },
       "BlogManagement.Infrastructure.Configuration/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "01_LampshadeQuery": "1.0.0",
           "BlogManagement.Application": "1.0.0",
@@ -2185,7 +2186,7 @@
       },
       "BlogManagement.Infrastructure.EFCore/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "BlogManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
@@ -2198,9 +2199,81 @@
           "bin/placeholder/BlogManagement.Infrastructure.EFCore.dll": {}
         }
       },
+      "CommentManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": "net5.0",
+        "dependencies": {
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "CommentManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Application.dll": {}
+        }
+      },
+      "CommentManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": "net5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Application.Contracts.dll": {}
+        }
+      },
+      "CommentManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": "net5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "CommentManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Domain.dll": {}
+        }
+      },
+      "CommentManagement.Infrastructure.Configuration/1.0.0": {
+        "type": "project",
+        "framework": "net5.0",
+        "dependencies": {
+          "CommentManagement.Application": "1.0.0",
+          "CommnetManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Infrastructure.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Infrastructure.Configuration.dll": {}
+        }
+      },
+      "CommnetManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": "net5.0",
+        "dependencies": {
+          "CommentManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4"
+        },
+        "compile": {
+          "bin/placeholder/CommnetManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommnetManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
       "DiscountManagement.Application/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "DiscountManagement.Application.Contract": "1.0.0",
           "DiscountManagement.Domain": "1.0.0"
@@ -2214,7 +2287,7 @@
       },
       "DiscountManagement.Application.Contract/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
@@ -2228,7 +2301,7 @@
       },
       "DiscountManagement.Configuration/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "DiscountManagement.Application": "1.0.0",
           "DiscountManagement.Application.Contract": "1.0.0",
@@ -2243,7 +2316,7 @@
       },
       "DiscountManagement.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
           "DiscountManagement.Application.Contract": "1.0.0"
@@ -2257,7 +2330,7 @@
       },
       "DiscountManagement.Infrastructure.EFCore/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "DiscountManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
@@ -2273,7 +2346,7 @@
       },
       "InventoryManagement.Application/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "InventoryManagement.Application.Contract": "1.0.0",
           "InventoryManagement.Domain": "1.0.0"
@@ -2287,7 +2360,7 @@
       },
       "InventoryManagement.Application.Contract/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
@@ -2301,7 +2374,7 @@
       },
       "InventoryManagement.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
           "InventoryManagement.Application.Contract": "1.0.0"
@@ -2315,7 +2388,7 @@
       },
       "InventoryManagement.Infrastructure.Configuration/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "InventoryManagement.Application": "1.0.0",
           "InventoryManagement.Domain": "1.0.0",
@@ -2330,7 +2403,7 @@
       },
       "InventoryMangement.Infrastructure.EFCore/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "InventoryManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
@@ -2346,7 +2419,7 @@
       },
       "ShopManagement.Application/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "ShopManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Domain": "1.0.0"
@@ -2360,7 +2433,7 @@
       },
       "ShopManagement.Application.Contracts/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "3.1.6"
@@ -2374,7 +2447,7 @@
       },
       "ShopManagement.Configuration/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "01_LampshadeQuery": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
@@ -2392,7 +2465,7 @@
       },
       "ShopManagement.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
@@ -2406,7 +2479,7 @@
       },
       "ShopManagement.Infrastructure.EFCore/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": "net5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
@@ -7593,6 +7666,31 @@
       "path": "../BlogManagement.Infrastructure.EFCore/BlogManagement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../BlogManagement.Infrastructure.EFCore/BlogManagement.Infrastructure.EFCore.csproj"
     },
+    "CommentManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Application/CommentManagement.Application.csproj",
+      "msbuildProject": "../CommentManagement.Application/CommentManagement.Application.csproj"
+    },
+    "CommentManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Application.Contracts/CommentManagement.Application.Contracts.csproj",
+      "msbuildProject": "../CommentManagement.Application.Contracts/CommentManagement.Application.Contracts.csproj"
+    },
+    "CommentManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Domain/CommentManagement.Domain.csproj",
+      "msbuildProject": "../CommentManagement.Domain/CommentManagement.Domain.csproj"
+    },
+    "CommentManagement.Infrastructure.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Infrastructure.Configuration/CommentManagement.Infrastructure.Configuration.csproj",
+      "msbuildProject": "../CommentManagement.Infrastructure.Configuration/CommentManagement.Infrastructure.Configuration.csproj"
+    },
+    "CommnetManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../CommnetManagement.Infrastructure.EFCore/CommnetManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../CommnetManagement.Infrastructure.EFCore/CommnetManagement.Infrastructure.EFCore.csproj"
+    },
     "DiscountManagement.Application/1.0.0": {
       "type": "project",
       "path": "../DiscountManagement.Application/DiscountManagement.Application.csproj",
@@ -7670,8 +7768,10 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v5.0": [
+    "net5.0": [
       "BlogManagement.Infrastructure.Configuration >= 1.0.0",
+      "CommentManagement.Application.Contracts >= 1.0.0",
+      "CommentManagement.Infrastructure.Configuration >= 1.0.0",
       "DiscountManagement.Configuration >= 1.0.0",
       "InventoryManagement.Infrastructure.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0-preview.6.20312.4",
@@ -7711,6 +7811,12 @@
           "projectReferences": {
             "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
               "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
+            },
+            "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\CommentManagement.Application.Contracts\\CommentManagement.Application.Contracts.csproj": {
+              "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\CommentManagement.Application.Contracts\\CommentManagement.Application.Contracts.csproj"
+            },
+            "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
             },
             "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
               "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
