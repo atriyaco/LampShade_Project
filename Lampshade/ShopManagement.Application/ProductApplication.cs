@@ -2,6 +2,7 @@
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
+using System;
 using System.Collections.Generic;
 
 namespace ShopManagement.Application
