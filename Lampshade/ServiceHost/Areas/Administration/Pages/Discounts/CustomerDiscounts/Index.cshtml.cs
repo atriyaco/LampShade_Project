@@ -7,6 +7,7 @@ using System.Collections.Generic;
 
 namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts
 {
+    //[Authorize(Roles = Roles.Administator)]
     public class IndexModel : PageModel
     {
         [TempData]
