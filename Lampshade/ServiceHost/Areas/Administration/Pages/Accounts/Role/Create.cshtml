@@ -1,30 +1,37 @@
-﻿@model AccountManagement.Application.Contracts.Role.CreateRole
-@{
-}
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.Accounts.Role.CreateModel
 
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
     <h4 class="modal-title">ایجاد نقش جدید</h4>
 </div>
 
-<form asp-page="./Index" asp-page-handler="Create"
-      method="post"
-      data-ajax="true"
-      data-callback=""
-      data-action="Refresh">
-    <div class="modal-body">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label asp-for="Name" class="control-label">نام</label>
-                    <input type="text" class="form-control" asp-for="Name">
-                    <span asp-validation-for="Name" class="error"></span>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">ایجاد نقش جدید</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <form method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label asp-for="Command.Name" class="control-label">نام</label>
+                                        <input type="text" class="form-control" asp-for="Command.Name">
+                                        <span asp-validation-for="Command.Name" class="error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-info waves-effect waves-light">ایجاد</button>
+                            <a asp-page="./Index" class="btn btn-dark waves-effect waves-light m-b-5">بازگشت</a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
-            <button type="submit" class="btn btn-info waves-effect waves-light">ایجاد</button>
-        </div>
     </div>
-</form>
+</div>

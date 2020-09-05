@@ -1,31 +1,97 @@
-﻿@model AccountManagement.Application.Contracts.Role.EditRole
-@{
-}
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.Accounts.Role.EditModel
 
-<div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h4 class="modal-title">ویرایش نقش: @Model.Name</h4>
-</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">ویرایش نقش @Model.Command.Name</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <form method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label asp-for="Command.Name" class="control-label">نام</label>
+                                        <input type="text" class="form-control" asp-for="Command.Name">
+                                        <span asp-validation-for="Command.Name" class="error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="control-label col-md-3">انتخاب دسترسی ها</label>
+                                    <div class="col-md-12">
+                                        <select asp-for="Command.Permissions" asp-items="Model.Permissions" class="multi-select" multiple="multiple" id="my_multi_select3">
 
-<form asp-page="./Index" asp-page-handler="Edit"
-      method="post"
-      data-ajax="true"
-      data-callback=""
-      data-action="Refresh">
-    <div class="modal-body">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label asp-for="Name" class="control-label">نام</label>
-                    <input type="text" class="form-control" asp-for="Name">
-                    <span asp-validation-for="Name" class="error"></span>
+                                        </select>
+                                    </div>
+                                    <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id"/>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-info waves-effect waves-light">ویرایش</button>
+                            <a asp-page="./Index" class="btn btn-dark waves-effect waves-light m-b-5">بازگشت</a>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <input type="hidden" asp-for="Id" value="@Model.Id" />
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
-            <button type="submit" class="btn btn-info waves-effect waves-light">ویرایش</button>
         </div>
     </div>
-</form>
+</div>
+
+@section Css
+{
+    <link href="~/AdminTheme/assets/jquery-multi-select/multi-select.css" rel="stylesheet" type="text/css"/>
+}
+
+@section Scripts
+{
+    <script type="text/javascript" src="~/AdminTheme/assets/jquery-multi-select/jquery.multi-select.js"></script>
+    <script type="text/javascript" src="~/AdminTheme/assets/jquery-multi-select/jquery.quicksearch.js"></script>
+
+    <script>
+        jQuery(document).ready(function() {
+            $('#my_multi_select3').multiSelect({
+                selectableOptgroup: true,
+                selectableHeader:
+                    "<input type='text' class='form-control search-input' autocomplete='off' placeholder='search...'>",
+                selectionHeader:
+                    "<input type='text' class='form-control search-input' autocomplete='off' placeholder='search...'>",
+                afterInit: function(ms) {
+                    var that = this,
+                        $selectableSearch = that.$selectableUl.prev(),
+                        $selectionSearch = that.$selectionUl.prev(),
+                        selectableSearchString =
+                            '#' + that.$container.attr('id') + ' .ms-elem-selectable:not(.ms-selected)',
+                        selectionSearchString = '#' + that.$container.attr('id') + ' .ms-elem-selection.ms-selected';
+
+                    that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
+                        .on('keydown',
+                            function(e) {
+                                if (e.which === 40) {
+                                    that.$selectableUl.focus();
+                                    return false;
+                                }
+                            });
+
+                    that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
+                        .on('keydown',
+                            function(e) {
+                                if (e.which == 40) {
+                                    that.$selectionUl.focus();
+                                    return false;
+                                }
+                            });
+                },
+                afterSelect: function() {
+                    this.qs1.cache();
+                    this.qs2.cache();
+                },
+                afterDeselect: function() {
+                    this.qs1.cache();
+                    this.qs2.cache();
+                }
+            });
+        });
+    </script>
+}

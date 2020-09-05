@@ -33,7 +33,7 @@ namespace ServiceHost
         {
             services.AddHttpContextAccessor();
             var connectionString = Configuration.GetConnectionString("LampshadeDb");
-            ShopManagementBoostrapper.Configure(services, connectionString);
+            ShopManagementBootstrapper.Configure(services, connectionString);
             DiscountManagementBootstrapper.Configure(services, connectionString);
             InventoryManagementBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services, connectionString);
