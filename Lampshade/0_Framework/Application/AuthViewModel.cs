@@ -1,4 +1,5 @@
-﻿using _0_Framework.Infrastructure;
+﻿using System.Collections.Generic;
+using _0_Framework.Infrastructure;
 
 namespace _0_Framework.Application
 {
@@ -9,17 +10,19 @@ namespace _0_Framework.Application
         public string Role { get; set; }
         public string Fullname { get; set; }
         public string Username { get; set; }
+        public List<int> Permissions { get; set; }
 
         public AuthViewModel()
         {
         }
 
-        public AuthViewModel(long id, long roleId, string fullname, string username)
+        public AuthViewModel(long id, long roleId, string fullname, string username, List<int> permissions)
         {
             Id = id;
             RoleId = roleId;
             Fullname = fullname;
             Username = username;
+            Permissions = permissions;
         }
     }
 }

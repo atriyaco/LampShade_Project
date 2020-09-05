@@ -1,4 +1,5 @@
 ﻿@page
+@using InventoryManagement.Infrastructure.Configuration.Permissions
 @model ServiceHost.Areas.Administration.Pages.Inventory.IndexModel
 @{
 }
@@ -12,12 +13,12 @@
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">ایجاد انبار جدید</a>
+            <a permission="@InventoryPermissions.CreateInventory" class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">ایجاد انبار جدید</a>
         </p>
     </div>
 </div>
 
-<div class="row">
+<div class="row" permission="@InventoryPermissions.SearchInventory">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -47,7 +48,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div class="row" permission="@InventoryPermissions.ListInventory">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -58,45 +59,45 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <table id="datatable" class="table table-striped table-bordered">
                             <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>محصول</th>
-                                    <th>قیمت</th>
-                                    <th>موجودی انبار</th>
-                                    <th>تاریخ ایجاد</th>
-                                    <th>عملیات</th>
-                                </tr>
+                            <tr>
+                                <th>#</th>
+                                <th>محصول</th>
+                                <th>قیمت</th>
+                                <th>موجودی انبار</th>
+                                <th>تاریخ ایجاد</th>
+                                <th>عملیات</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model.Inventory)
-                                {
-                                    <tr>
-                                        <td>@item.Id</td>
-                                        <td>@item.Product</td>
-                                        <td>@item.UnitPrice</td>
-                                        <td>@item.CurrentCount</td>
-                                        <td>@item.CreationDate</td>
-                                        <td>
-                                            <a class="btn btn-warning waves-effect waves-light m-b-5"
-                                               href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
-                                                <i class="fa fa-edit"></i> ویرایش
-                                            </a>
-                                            <a class="btn btn-success waves-effect waves-light m-b-5"
-                                               href="#showmodal=@Url.Page("./Index", "Increase", new { id = item.Id})">
-                                                <i class="fa fa-plus"></i> افزایش موجودی
-                                            </a>
-                                            <a class="btn btn-danger waves-effect waves-light m-b-5"
-                                               href="#showmodal=@Url.Page("./Index", "Reduce", new { id = item.Id})">
-                                                <i class="fa fa-minus"></i> کاهش موجودی
-                                            </a>
-                                            <a class="btn btn-primary waves-effect waves-light m-b-5"
-                                               href="#showmodal=@Url.Page("./Index", "Log", new { id = item.Id})"
-                                               onclick="$('.modal-dialog').css('width', '60%')">
-                                                <i class="fa fa-recycle"></i> مشاهده گردنش انبار
-                                            </a>
-                                        </td>
-                                    </tr>
-                                }
+                            @foreach (var item in Model.Inventory)
+                            {
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>@item.Product</td>
+                                    <td>@item.UnitPrice</td>
+                                    <td>@item.CurrentCount</td>
+                                    <td>@item.CreationDate</td>
+                                    <td>
+                                        <a permission="@InventoryPermissions.EditInventory" class="btn btn-warning waves-effect waves-light m-b-5"
+                                           href="#showmodal=@Url.Page("./Index", "Edit", new {id = item.Id})">
+                                            <i class="fa fa-edit"></i> ویرایش
+                                        </a>
+                                        <a permission="@InventoryPermissions.Increase" class="btn btn-success waves-effect waves-light m-b-5"
+                                           href="#showmodal=@Url.Page("./Index", "Increase", new {id = item.Id})">
+                                            <i class="fa fa-plus"></i> افزایش موجودی
+                                        </a>
+                                        <a permission="@InventoryPermissions.Reduce" class="btn btn-danger waves-effect waves-light m-b-5"
+                                           href="#showmodal=@Url.Page("./Index", "Reduce", new {id = item.Id})">
+                                            <i class="fa fa-minus"></i> کاهش موجودی
+                                        </a>
+                                        <a permission="@InventoryPermissions.OperationLog" class="btn btn-primary waves-effect waves-light m-b-5"
+                                           href="#showmodal=@Url.Page("./Index", "Log", new {id = item.Id})"
+                                           onclick="$('.modal-dialog').css('width', '60%')">
+                                            <i class="fa fa-recycle"></i> مشاهده گردنش انبار
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
                             </tbody>
                         </table>
                     </div>
@@ -111,7 +112,7 @@
     <script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('#datatable').dataTable();
         });
     </script>

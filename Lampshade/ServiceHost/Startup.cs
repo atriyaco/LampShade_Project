@@ -62,23 +62,23 @@ namespace ServiceHost
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("AdminArea",
-                builder => builder.RequireRole(new List<string> { Roles.Administator, Roles.ContentUploader }));
+                    builder => builder.RequireRole(new List<string> {Roles.Administator, Roles.ContentUploader}));
 
                 options.AddPolicy("Shop",
-                builder => builder.RequireRole(new List<string> { Roles.Administator }));
-                
+                    builder => builder.RequireRole(new List<string> {Roles.Administator}));
+
                 options.AddPolicy("Discount",
-                builder => builder.RequireRole(new List<string> { Roles.Administator }));
+                    builder => builder.RequireRole(new List<string> {Roles.Administator}));
 
                 options.AddPolicy("Account",
-                builder => builder.RequireRole(new List<string> { Roles.Administator }));
+                    builder => builder.RequireRole(new List<string> {Roles.Administator}));
             });
 
             services.AddRazorPages()
+                .AddMvcOptions(options => options.Filters.Add<SecurityPageFilter>())
                 .AddRazorPagesOptions(options =>
                 {
                     options.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
-
                     options.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
                     options.Conventions.AuthorizeAreaFolder("Administration", "/Discounts", "Discount");
                     options.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
@@ -109,10 +109,7 @@ namespace ServiceHost
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapRazorPages();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapRazorPages(); });
         }
     }
 }

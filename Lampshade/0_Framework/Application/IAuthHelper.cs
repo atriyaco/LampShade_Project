@@ -1,4 +1,6 @@
-﻿namespace _0_Framework.Application
+﻿using System.Collections.Generic;
+
+namespace _0_Framework.Application
 {
     public interface IAuthHelper
     {
@@ -7,5 +9,6 @@
         void Signin(AuthViewModel account);
         string CurrentAccountRole();
         AuthViewModel CurrentAccountInfo();
+        List<int> GetPermissions();
     }
 }

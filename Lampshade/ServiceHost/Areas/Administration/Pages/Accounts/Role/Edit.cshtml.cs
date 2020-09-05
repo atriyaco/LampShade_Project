@@ -25,17 +25,12 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Role
         public void OnGet(long id)
         {
             Command = _roleApplication.GetDetails(id);
-            var permissions = new List<PermissionDto>();
             foreach (var exposer in _exposers)
             {
                 var exposedPermissions = exposer.Expose();
                 foreach (var (key, value) in exposedPermissions)
                 {
-                    permissions.AddRange(value);
-                    var group = new SelectListGroup
-                    {
-                        Name = key
-                    };
+                    var group = new SelectListGroup {Name = key};
                     foreach (var permission in value)
                     {
                         var item = new SelectListItem(permission.Name, permission.Code.ToString())
