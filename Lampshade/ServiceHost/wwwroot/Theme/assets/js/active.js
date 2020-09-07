@@ -481,11 +481,5 @@
         slidesToShow: 1
     });
     /*=====  End of blog post gallery  ======*/
-    
-    
-	
-
-    
-
 
 })(jQuery);

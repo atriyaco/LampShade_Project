@@ -10,7 +10,7 @@ using InventoryManagement.Infrastructure.Configuration.Permissions;
 
 namespace ServiceHost.Areas.Administration.Pages.Inventory
 {
-    [Authorize(Roles = Roles.Administator)]
+    [Authorize(Roles = Roles.Administrator)]
     public class IndexModel : PageModel
     {
         [TempData] public string Message { get; set; }

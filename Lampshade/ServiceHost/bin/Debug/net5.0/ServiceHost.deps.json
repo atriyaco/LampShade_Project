@@ -28,6 +28,16 @@
     ".NETCoreApp,Version=v5.0": {
       "ServiceHost/1.0.0": {
         "dependencies": {
+          "AccountManagement.Configuration": "1.0.0",
+          "BlogManagement.Infrastructure.Configuration": "1.0.0",
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "CommentManagement.Infrastructure.Configuration": "1.0.0",
+          "DiscountManagement.Configuration": "1.0.0",
+          "InventoryManagement.Infrastructure.Configuration": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Design": "5.0.0-preview.6.20312.4",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.0-preview.6.20323.1",
+          "Nancy": "1.4.3",
+          "ShopManagement.Configuration": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies.Reference": "5.0.0.0",
@@ -1128,6 +1138,17 @@
       "Microsoft.Win32.SystemEvents/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0"
+        }
+      },
+      "Nancy/1.4.3": {
+        "runtime": {
+          "lib/net40/Nancy.dll": {
+            "assemblyVersion": "1.4.2.0",
+            "fileVersion": "1.4.2.0"
+          }
+        },
+        "compile": {
+          "lib/net40/Nancy.dll": {}
         }
       },
       "Newtonsoft.Json/11.0.2": {
@@ -4496,6 +4517,13 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "Nancy/1.4.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4ZqIS2ZpFbQ5hgv1W/3qBz/gJd0J81+/3S31Hs6bATsexi3UDFvMrjL/i0qlrZRE0dquRHRztYDWoGl9jeb0aQ==",
+      "path": "nancy/1.4.3",
+      "hashPath": "nancy.1.4.3.nupkg.sha512"
     },
     "Newtonsoft.Json/11.0.2": {
       "type": "package",

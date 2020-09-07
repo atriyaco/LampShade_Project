@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/AmKjFpByvEOrUEMQFMRTa5dNDqdSYHbqepWs29LmYV2sGe8AXlxaN1/SFMpo81JMRlwNYIHoYh0IKooVxgdgQ==",
+  "dgSpecHash": "+fdiEfpdwEUqyM5IPnz47OAWCdShf+ru1uTpbGGbGLY5c9r50PW58rFSZZV1LphksRrjAdXco6HIxOeC0ZwSUg==",
   "success": true,
   "projectFilePath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj",
   "expectedPackageFiles": [
@@ -72,6 +72,7 @@
     "C:\\Users\\Atria\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\5.0.0-preview.6.20323.1\\microsoft.visualstudio.web.codegenerators.mvc.5.0.0-preview.6.20323.1.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\nancy\\1.4.3\\nancy.1.4.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\nuget.frameworks\\5.7.0-preview.2.6618\\nuget.frameworks.5.7.0-preview.2.6618.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
@@ -157,5 +158,16 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Nancy 1.4.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Nancy",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v5.0"
+      ]
+    }
+  ]
 }

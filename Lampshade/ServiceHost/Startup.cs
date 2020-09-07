@@ -17,6 +17,7 @@ using ShopManagement.Configuration;
 using System.Collections.Generic;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
+using _01_LampshadeQuery.Contracts;
 
 namespace ServiceHost
 {
@@ -44,7 +45,7 @@ namespace ServiceHost
             services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddTransient<IAuthHelper, AuthHelper>();
-
+            
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
@@ -62,16 +63,16 @@ namespace ServiceHost
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("AdminArea",
-                    builder => builder.RequireRole(new List<string> {Roles.Administator, Roles.ContentUploader}));
+                    builder => builder.RequireRole(new List<string> {Roles.Administrator, Roles.ContentUploader}));
 
                 options.AddPolicy("Shop",
-                    builder => builder.RequireRole(new List<string> {Roles.Administator}));
+                    builder => builder.RequireRole(new List<string> {Roles.Administrator}));
 
                 options.AddPolicy("Discount",
-                    builder => builder.RequireRole(new List<string> {Roles.Administator}));
+                    builder => builder.RequireRole(new List<string> {Roles.Administrator}));
 
                 options.AddPolicy("Account",
-                    builder => builder.RequireRole(new List<string> {Roles.Administator}));
+                    builder => builder.RequireRole(new List<string> {Roles.Administrator}));
             });
 
             services.AddRazorPages()

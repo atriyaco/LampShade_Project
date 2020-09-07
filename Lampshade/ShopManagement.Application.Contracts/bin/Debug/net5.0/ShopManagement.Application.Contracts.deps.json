@@ -501,6 +501,14 @@
         "runtime": {
           "0_Framework.dll": {}
         }
+      },
+      "Newtonsoft.Json/11.0.0.0": {
+        "runtime": {
+          "Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        }
       }
     }
   },
@@ -855,6 +863,11 @@
     },
     "0_Framework/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/11.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

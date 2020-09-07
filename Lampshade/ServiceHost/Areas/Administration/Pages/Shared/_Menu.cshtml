@@ -1,4 +1,5 @@
-﻿@inject _0_Framework.Application.IAuthHelper AuthHelper;
+﻿@using _0_Framework.Infrastructure
+@inject _0_Framework.Application.IAuthHelper AuthHelper;
 @{
     var currentAccout = AuthHelper.CurrentAccountInfo();
 }
@@ -31,7 +32,7 @@
                 <li>
                     <a asp-page="/Comments/Index" class="waves-effect"><i class="md md-home"></i><span> کامنت ها </span></a>
                 </li>
-                @if (AuthHelper.CurrentAccountRole() == "1")
+                @if (AuthHelper.CurrentAccountRole() == Roles.Administrator)
                 {
 
                     <li>

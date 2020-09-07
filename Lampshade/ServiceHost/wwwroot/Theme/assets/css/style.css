@@ -797,7 +797,7 @@ select {
 .mini-cart .cart-items-wrapper {
 	position: relative;
 	overflow: hidden;
-	max-height: 280px;
+	/*max-height: 280px;*/
 	margin: 0 -30px;
 	padding: 0 30px;
 }
@@ -873,6 +873,7 @@ select {
 	font-weight: 500;
 	line-height: 18px;
 	color: #242424;
+    margin-bottom: 8px;
 }
 
 .mini-cart .single-cart-item .content .count span {
@@ -4782,7 +4783,7 @@ select {
 	width: 100%;
 }
 
-.cart-summary .cart-summary-button button {
+.cart-summary .cart-summary-button a {
 	line-height: 24px;
 	float: right;
 	width: 140px;
@@ -4796,25 +4797,26 @@ select {
 	background-color: transparent;
 }
 
-.cart-summary .cart-summary-button button:last-child {
+.cart-summary .cart-summary-button a:last-child {
 	margin-left: 0;
 }
 
-.cart-summary .cart-summary-button button:hover {
+.cart-summary .cart-summary-button a:hover {
 	color: #fff;
 	border-color: #e33;
 	background-color: #e33;
 }
 
-.cart-summary .cart-summary-button button.checkout-btn {
+.cart-summary .cart-summary-button a.checkout-btn {
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #fff;
 	border-color: #292929;
 	background-color: #292929;
+    text-align: center;
 }
 
-.cart-summary .cart-summary-button button.checkout-btn:hover {
+.cart-summary .cart-summary-button a.checkout-btn:hover {
 	border-color: #e33;
 	background-color: #e33;
 }

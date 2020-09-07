@@ -1897,6 +1897,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.0-preview.6.20323.1, )"
+            },
+            "Nancy": {
+              "target": "Package",
+              "version": "[1.4.3, )"
             }
           },
           "imports": [
