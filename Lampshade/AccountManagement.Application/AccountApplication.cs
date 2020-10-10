@@ -41,6 +41,16 @@ namespace AccountManagement.Application
             return operation.Succedded();
         }
 
+        public AccountViewModel GetAccountBy(long id)
+        {
+            var account = _accountRepository.Get(id);
+            return new AccountViewModel()
+            {
+                Fullname = account.Fullname,
+                Mobile = account.Mobile
+            };
+        }
+
         public OperationResult Register(RegisterAccount command)
         {
             var operation = new OperationResult();
@@ -97,8 +107,8 @@ namespace AccountManagement.Application
                 .Select(x => x.Code)
                 .ToList();
 
-            var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username,
-                permissions);
+            var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname
+                , account.Username, account.Mobile, permissions);
 
             _authHelper.Signin(authViewModel);
             return operation.Succedded();

@@ -11,5 +11,6 @@ namespace _0_Framework.Application
         AuthViewModel CurrentAccountInfo();
         List<int> GetPermissions();
         long CurrentAccountId();
+        string CurrentAccountMobile();
     }
 }

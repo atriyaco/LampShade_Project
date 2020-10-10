@@ -131,6 +131,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[106.11.4, )"
+            },
+            "SmsIrRestful": {
+              "target": "Package",
+              "version": "[1.1.3, )"
             }
           },
           "imports": [
@@ -1315,6 +1319,9 @@
               "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
                 "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
               },
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.AccountAcl\\ShopManagement.Infrastructure.AccountAcl.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.AccountAcl\\ShopManagement.Infrastructure.AccountAcl.csproj"
+              },
               "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               },
@@ -1398,6 +1405,68 @@
               },
               "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
                 "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.AccountAcl\\ShopManagement.Infrastructure.AccountAcl.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.AccountAcl\\ShopManagement.Infrastructure.AccountAcl.csproj",
+        "projectName": "ShopManagement.Infrastructure.AccountAcl",
+        "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.AccountAcl\\ShopManagement.Infrastructure.AccountAcl.csproj",
+        "packagesPath": "C:\\Users\\Atria\\.nuget\\packages\\",
+        "outputPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Infrastructure.AccountAcl\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Atria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
+              },
+              "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }

@@ -192,7 +192,6 @@ C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\Ser
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Domain.pdb
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.pdb
-C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.TagHelpers.input.cache
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.TagHelpers.output.cache
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorCoreGenerate.cache
@@ -276,3 +275,6 @@ C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\Ser
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
 C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\SmsIrRestful.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.dll
+C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.pdb

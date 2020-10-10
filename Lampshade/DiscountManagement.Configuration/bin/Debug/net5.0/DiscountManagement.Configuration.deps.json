@@ -686,6 +686,14 @@
           }
         }
       },
+      "SmsIrRestful/1.1.3": {
+        "runtime": {
+          "lib/SmsIrRestful.dll": {
+            "assemblyVersion": "1.1.3.0",
+            "fileVersion": "1.1.3.0"
+          }
+        }
+      },
       "System.Buffers/4.5.0": {},
       "System.Collections/4.3.0": {
         "dependencies": {
@@ -1377,7 +1385,8 @@
           "Microsoft.AspNetCore.Http.Features": "3.1.6",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
-          "RestSharp": "106.11.4"
+          "RestSharp": "106.11.4",
+          "SmsIrRestful": "1.1.3"
         },
         "runtime": {
           "0_Framework.dll": {}
@@ -1890,6 +1899,13 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "SmsIrRestful/1.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ouYKkhQv0zLbdDIPw5Eagpod9828Fd2zQhqt2N2MMPHdCV7oHYuAvClSBS4Pru1MclEvH5mmLfE7cgeFZ9ea+w==",
+      "path": "smsirrestful/1.1.3",
+      "hashPath": "smsirrestful.1.1.3.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",

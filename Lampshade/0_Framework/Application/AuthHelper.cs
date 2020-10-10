@@ -51,6 +51,13 @@ namespace _0_Framework.Application
                 : 0;
         }
 
+        public string CurrentAccountMobile()
+        {
+            return IsAuthenticated()
+                ? _contextAccessor.HttpContext.User.Claims.First(x => x.Type == "Mobile")?.Value
+                : "";
+        }
+
         public string CurrentAccountRole()
         {
             if (IsAuthenticated())
@@ -77,7 +84,8 @@ namespace _0_Framework.Application
                 new Claim(ClaimTypes.Name, account.Fullname),
                 new Claim(ClaimTypes.Role, account.RoleId.ToString()),
                 new Claim("Username", account.Username), // Or Use ClaimTypes.NameIdentifier
-                new Claim("permissions", permissions)
+                new Claim("permissions", permissions),
+                new Claim("Mobile", account.Mobile)
             };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

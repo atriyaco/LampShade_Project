@@ -751,6 +751,15 @@
           }
         }
       },
+      "SmsIrRestful/1.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/SmsIrRestful.dll": {}
+        },
+        "runtime": {
+          "lib/SmsIrRestful.dll": {}
+        }
+      },
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -1858,7 +1867,8 @@
           "Microsoft.AspNetCore.Http.Features": "3.1.6",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
-          "RestSharp": "106.11.4"
+          "RestSharp": "106.11.4",
+          "SmsIrRestful": "1.1.3"
         },
         "compile": {
           "bin/placeholder/0_Framework.dll": {}
@@ -3147,6 +3157,18 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "SmsIrRestful/1.1.3": {
+      "sha512": "ouYKkhQv0zLbdDIPw5Eagpod9828Fd2zQhqt2N2MMPHdCV7oHYuAvClSBS4Pru1MclEvH5mmLfE7cgeFZ9ea+w==",
+      "type": "package",
+      "path": "smsirrestful/1.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/SmsIrRestful.dll",
+        "smsirrestful.1.1.3.nupkg.sha512",
+        "smsirrestful.nuspec"
       ]
     },
     "System.Buffers/4.5.0": {
@@ -6915,5 +6937,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SmsIrRestful 1.1.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SmsIrRestful",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v5.0"
+      ]
+    }
+  ]
 }

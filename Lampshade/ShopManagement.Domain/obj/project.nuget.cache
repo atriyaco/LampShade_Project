@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sYCwmrTC6OnYITUdfCHOZ2U35K+s/bsusi2FK2KYYjn6e6rvgUNwdGH9jlbEGdKm9uEYs7hmrKQGN1iHxvr1Sw==",
+  "dgSpecHash": "nWjdX7XD6ll0ZpWR6QKummE4SpD9xBxcQQpMEwGOe/grGENXppGsEijIvZDVSxAy+dE9dGw2jbaHANhxtAKLxg==",
   "success": true,
   "projectFilePath": "C:\\Hossein\\Packages\\.NetCoreMvcApi\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\restsharp\\106.11.4\\restsharp.106.11.4.nupkg.sha512",
+    "C:\\Users\\Atria\\.nuget\\packages\\smsirrestful\\1.1.3\\smsirrestful.1.1.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\system.collections.immutable\\5.0.0-preview.3.20214.6\\system.collections.immutable.5.0.0-preview.3.20214.6.nupkg.sha512",
     "C:\\Users\\Atria\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0-preview.3.20214.6\\system.componentmodel.annotations.5.0.0-preview.3.20214.6.nupkg.sha512",
@@ -55,5 +56,16 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SmsIrRestful 1.1.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SmsIrRestful",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v5.0"
+      ]
+    }
+  ]
 }
