@@ -19,42 +19,44 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ShopManagement.Domain.CommentAgg.Comment", b =>
+            modelBuilder.Entity("ShopManagement.Domain.OrderAgg.Order", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<long>("AccountId")
+                        .HasColumnType("bigint");
+
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(500)")
-                        .HasMaxLength(500);
+                    b.Property<double>("DiscountAmount")
+                        .HasColumnType("float");
 
                     b.Property<bool>("IsCanceled")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("IsConfirmed")
+                    b.Property<bool>("IsPaid")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(1000)")
-                        .HasMaxLength(1000);
+                    b.Property<string>("IssueTrackingNo")
+                        .HasColumnType("nvarchar(8)")
+                        .HasMaxLength(8);
 
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(500)")
-                        .HasMaxLength(500);
+                    b.Property<double>("PayAmount")
+                        .HasColumnType("float");
 
-                    b.Property<long>("ProductId")
+                    b.Property<long>("RefId")
                         .HasColumnType("bigint");
+
+                    b.Property<double>("TotalAmount")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Comments");
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("ShopManagement.Domain.ProductAgg.Product", b =>
@@ -265,13 +267,42 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                     b.ToTable("Slides");
                 });
 
-            modelBuilder.Entity("ShopManagement.Domain.CommentAgg.Comment", b =>
+            modelBuilder.Entity("ShopManagement.Domain.OrderAgg.Order", b =>
                 {
-                    b.HasOne("ShopManagement.Domain.ProductAgg.Product", "Product")
-                        .WithMany("Comments")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.OwnsMany("ShopManagement.Domain.OrderAgg.OrderItem", "Items", b1 =>
+                        {
+                            b1.Property<long>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("bigint")
+                                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                            b1.Property<int>("Count")
+                                .HasColumnType("int");
+
+                            b1.Property<DateTime>("CreationDate")
+                                .HasColumnType("datetime2");
+
+                            b1.Property<int>("DiscountRate")
+                                .HasColumnType("int");
+
+                            b1.Property<long>("OrderId")
+                                .HasColumnType("bigint");
+
+                            b1.Property<long>("ProductId")
+                                .HasColumnType("bigint");
+
+                            b1.Property<double>("UnitPrice")
+                                .HasColumnType("float");
+
+                            b1.HasKey("Id");
+
+                            b1.HasIndex("OrderId");
+
+                            b1.ToTable("OrderItems");
+
+                            b1.WithOwner("Order")
+                                .HasForeignKey("OrderId");
+                        });
                 });
 
             modelBuilder.Entity("ShopManagement.Domain.ProductAgg.Product", b =>

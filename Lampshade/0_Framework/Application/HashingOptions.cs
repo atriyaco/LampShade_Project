@@ -1,4 +1,4 @@
-﻿namespace Framework.Application
+﻿namespace _0_Framework.Application
 {
     public sealed class HashingOptions
     {

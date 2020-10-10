@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    ".NETCoreApp,Version=v5.0": {
       "Microsoft.AspNetCore.Authentication/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -482,6 +482,15 @@
           }
         }
       },
+      "RestSharp/106.11.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -637,12 +646,13 @@
       },
       "0_Framework/1.0.0": {
         "type": "project",
-        "framework": "net5.0",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Cookies": "2.2.0",
           "Microsoft.AspNetCore.Http.Features": "3.1.6",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
-          "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4"
+          "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
+          "RestSharp": "106.11.4"
         },
         "compile": {
           "bin/placeholder/0_Framework.dll": {}
@@ -653,7 +663,7 @@
       },
       "InventoryManagement.Application.Contract/1.0.0": {
         "type": "project",
-        "framework": "net5.0",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
@@ -667,7 +677,7 @@
       },
       "ShopManagement.Application.Contracts/1.0.0": {
         "type": "project",
-        "framework": "net5.0",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "3.1.6"
@@ -1234,6 +1244,22 @@
         "version.txt"
       ]
     },
+    "RestSharp/106.11.4": {
+      "sha512": "vx35q52cM3UQNOiN3UqSQ9U7I5UeoyzVmjsWKQxOxn6FVu+n01+SNwhxc/jvf92WPBmmwzTV4VYTeTg4KviJdA==",
+      "type": "package",
+      "path": "restsharp/106.11.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.11.4.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
     "System.Buffers/4.5.0": {
       "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
       "type": "package",
@@ -1686,7 +1712,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    ".NETCoreApp,Version=v5.0": [
       "0_Framework >= 1.0.0",
       "InventoryManagement.Application.Contract >= 1.0.0"
     ]

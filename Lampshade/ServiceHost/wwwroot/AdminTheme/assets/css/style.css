@@ -265,7 +265,7 @@ a:focus {
 }
 
 .panel-title {
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 0;
@@ -2494,7 +2494,7 @@ body.fixed-left .side-menu.left {
 
 .table { margin-bottom: 10px; }
 
-tbody { color: #797979; }
+tbody { color: #000; }
 
 th {
     font-size: 15px;
@@ -2539,7 +2539,9 @@ table.focus-on tbody tr.focused th, table.focus-on tbody tr.focused td {
 
 /* Datatable */
 
-#datatable td { font-weight: normal; }
+#datatable td { font-weight: normal;
+    font-size: 17px;
+}
 
 div.dataTables_paginate ul.pagination { margin-top: 30px; }
 

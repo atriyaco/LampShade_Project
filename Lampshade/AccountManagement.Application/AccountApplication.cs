@@ -1,7 +1,6 @@
 ﻿using _0_Framework.Application;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
-using Framework.Application;
 using System.Collections.Generic;
 using System.Linq;
 using AccountManagement.Domain.RoleAgg;
@@ -108,6 +107,11 @@ namespace AccountManagement.Application
         public void Logout()
         {
             _authHelper.SignOut();
+        }
+
+        public List<AccountViewModel> GetAccounts()
+        {
+            return _accountRepository.GetAccounts();
         }
 
         public List<AccountViewModel> Search(AccountSearchModel searchModel)

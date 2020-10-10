@@ -14,6 +14,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\AccountMangement.Infrastructure.EFCore\AccountMangement.Infrastructure.EFCore.csproj" />
 	  <ProjectReference Include="..\InventoryManagement.Domain\InventoryManagement.Domain.csproj" />
 	  <ProjectReference Include="..\ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj" />
 	</ItemGroup>

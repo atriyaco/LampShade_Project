@@ -43,7 +43,7 @@ body {
 
 .single-grid-product__price .discounted-price {
     margin-right: unset;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .tab-slider-wrapper .tab-product-navigation .nav .nav-item:last-child { margin-right: 10px; }
