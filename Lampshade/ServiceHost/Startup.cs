@@ -16,6 +16,7 @@ using ShopManagement.Configuration;
 using System.Collections.Generic;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
+using _0_Framework.Application.Email;
 using _0_Framework.Application.Sms;
 using _0_Framework.Application.ZarinPal;
 using InventoryManagement.Presentation.Api;
@@ -49,6 +50,7 @@ namespace ServiceHost
             services.AddTransient<IAuthHelper, AuthHelper>();
             services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
             services.AddTransient<ISmsService, SmsService>();
+            services.AddTransient<IEmailService, EmailService>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {

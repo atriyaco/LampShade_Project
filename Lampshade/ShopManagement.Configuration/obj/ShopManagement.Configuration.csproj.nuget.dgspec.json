@@ -112,6 +112,10 @@
       "frameworks": {
         "net5.0": {
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.Cookies": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -127,6 +131,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0-preview.6.20312.4, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[1.10.0, )"
             },
             "RestSharp": {
               "target": "Package",
