@@ -23,7 +23,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0-preview.6.20323.1" />
-    <PackageReference Include="Nancy" Version="1.4.3" />
+    <PackageReference Include="Nancy" Version="1.4.4" />
   </ItemGroup>
 
   <ItemGroup>
